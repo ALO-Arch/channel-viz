@@ -1,7 +1,16 @@
 (function ( $ ){
-
-	var defaultKey		= 'APq1HszjpjsGadQWSGoS0No7M55um83KsdxjKAiPSuBD8wqW', // Unique master Xively API key to be used as a default
+	EXAMPLE CONFIGURATION
+		var defaultKey	= 'APq1HszjpjsGadQWSGoS0No7M55um83KsdxjKAiPSuBD8wqW', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [1024178028!hue,1024178028!breath], // Comma separated array of Xively Feed ID numbers
+		applicationName	= 'Space Intensifiers Data Streaming', // Replaces Xively logo in the header
+		dataDuration	= '90days', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
+		dataInterval	= 10800, // Default interval for data to be displayed (in seconds)
+		dataColor		= '0A1922', // CSS HEX value of color to represent data (omit leading #)
+		hideForm		= 0;
+
+
+	var defaultKey		= '', // Unique master Xively API key to be used as a default
+		defaultFeeds	= [], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'Space Intensifiers Data Streaming', // Replaces Xively logo in the header
 		dataDuration	= '90days', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 10800, // Default interval for data to be displayed (in seconds)
